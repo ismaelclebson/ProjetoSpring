@@ -1,0 +1,5 @@
+br/com/Attornatus/cliente/http/controller/ClienteController.class
+br/com/Attornatus/cliente/http/controller/EnderecoController.class
+br/com/Attornatus/cliente/repository/ClienteRepository.class
+br/com/Attornatus/cliente/repository/EnderecoRepository.class
+br/com/Attornatus/cliente/entity/Endereco.class

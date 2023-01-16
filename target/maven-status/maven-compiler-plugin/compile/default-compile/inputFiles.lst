@@ -1,0 +1,7 @@
+/home/isclebson/IdeaProjects/cliente/src/main/java/br/com/Attornatus/cliente/entity/Cliente.java
+/home/isclebson/IdeaProjects/cliente/src/main/java/br/com/Attornatus/cliente/entity/Endereco.java
+/home/isclebson/IdeaProjects/cliente/src/main/java/br/com/Attornatus/cliente/repository/EnderecoRepository.java
+/home/isclebson/IdeaProjects/cliente/src/main/java/br/com/Attornatus/cliente/ClienteApplication.java
+/home/isclebson/IdeaProjects/cliente/src/main/java/br/com/Attornatus/cliente/repository/ClienteRepository.java
+/home/isclebson/IdeaProjects/cliente/src/main/java/br/com/Attornatus/cliente/http/controller/ClienteController.java
+/home/isclebson/IdeaProjects/cliente/src/main/java/br/com/Attornatus/cliente/http/controller/EnderecoController.java
