@@ -1,15 +1,15 @@
 package br.com.Attornatus.cliente.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
+@ToString
 @Entity
 
 public class Endereco implements Serializable {
@@ -26,16 +26,6 @@ public class Endereco implements Serializable {
     private String cidade;
 @Column(nullable = false)
     private Boolean principal;
-@ManyToOne
-@JoinColumn(name = "cliente_id", nullable = false)
-    private Cliente cliente;
 
-    public Endereco(String logradouro, String numero, String cep, String cidade, Boolean principal, Cliente cliente) {
-        this.logradouro = logradouro;
-        this.numero = numero;
-        this.cep = cep;
-        this.cidade = cidade;
-        this.principal = principal;
-        this.cliente = cliente;
-    }
+
 }
