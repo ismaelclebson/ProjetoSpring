@@ -16,25 +16,25 @@ public class OrderController {
     @Autowired
     private EnderecoRepository er;
 
-    @PostMapping("/cliente")
+    @PostMapping("/cliente/salvar")
     public Cliente saveCliente(@RequestBody OrderRequest request){
         return cr.save(request.getCliente());
     }
-    @GetMapping("/cliente")
+    @GetMapping("/cliente/mostrarTodos")
     public List<Cliente> findAllOrders(){
         return cr.findAll();
     }
 
-    @GetMapping("/cliente/{id}")
-    public Cliente findById(Long id){
+    @GetMapping("/cliente/localizar/{id}")
+    public Cliente findById(@PathVariable Long id){
         return cr.findById(id).get();
     }
 
-    @DeleteMapping("/cliente/{id}")
-    public void deleteCliente(Long id){
+    @DeleteMapping("/cliente/excluir/{id}")
+    public void deleteCliente(@PathVariable Long id){
         cr.deleteById(id);
     }
 
-    
+
 
 }
