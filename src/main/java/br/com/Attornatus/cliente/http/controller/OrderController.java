@@ -5,10 +5,7 @@ import br.com.Attornatus.cliente.entity.Cliente;
 import br.com.Attornatus.cliente.repository.ClienteRepository;
 import br.com.Attornatus.cliente.repository.EnderecoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,5 +24,17 @@ public class OrderController {
     public List<Cliente> findAllOrders(){
         return cr.findAll();
     }
+
+    @GetMapping("/cliente/{id}")
+    public Cliente findById(Long id){
+        return cr.findById(id).get();
+    }
+
+    @DeleteMapping("/cliente/{id}")
+    public void deleteCliente(Long id){
+        cr.deleteById(id);
+    }
+
+    
 
 }
